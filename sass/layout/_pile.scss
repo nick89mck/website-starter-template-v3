@@ -1,9 +1,13 @@
-.pile {
-  display: grid;
-  grid-template-areas: "pile";
-  place-content: center;
+@use "../abstracts/" as *;
 
-  > * {
-    grid-area: pile;
+.#{$prefix} {
+  &pile {
+    display: grid;
+    grid-template-areas: "pile";
+    place-content: center;
+
+    > * {
+      grid-area: pile;
+    }
   }
 }

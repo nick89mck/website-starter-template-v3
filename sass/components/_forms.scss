@@ -1,8 +1,12 @@
 @use "../abstracts" as *;
 
-.contact-form {
-  .form-group {
-    display: grid;
+.#{$prefix} {
+  &contact-form {
+    .#{$prefix} {
+      &form-group {
+        display: grid;
+      }
+    }
   }
 }
 label {
